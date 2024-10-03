@@ -1,0 +1,11 @@
+{
+  "database": {
+    "host": "localhost",
+    "user": "postgres",
+    "password": "pwd",
+    "minconn": 1,
+    "maxconn": 6,
+    "database": "postgres",
+    "port": 5432
+  }
+}

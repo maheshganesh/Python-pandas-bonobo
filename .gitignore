@@ -1,0 +1,8 @@
+# Ignore git files
+.idea/vcs.xml
+.idea/Python-pandas-bonobo.iml
+.idea/modules.xml
+.idea/inspectionProfiles/profiles_settings.xml
+*.pyc
+etl_python/tests/.DS_Store
+*.txt
