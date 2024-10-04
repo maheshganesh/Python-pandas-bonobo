@@ -1,4 +1,4 @@
-#ETL Project with Bonobo Framework & Pandas
+# ETL Project with Bonobo Framework & Pandas
 Project to build ETL pipeline using Pandas, PostgreSQL and Bonobo framework with Unit Tests added.
 
 ## Features
@@ -12,24 +12,25 @@ Project to build ETL pipeline using Pandas, PostgreSQL and Bonobo framework with
 - Load: Load data to postgres database after joining two datasets (based on id),
         retrieves the highest rating directors' name.
 
-===========================================================================================
-## To execute ETL pipeline:
+- Utilized bonobo framework to generate simple workflow.  
+====================================================================================
+## Execute ETL pipeline:
 1. Ensure Python version: python3.8 or higher
 2. Install packages required
 ````
     pip install -r requirements.txt
 ````
-3. Pull down database from Docker Hub & run local postges container
+3. Pull down database from Docker Hub & run local postgesql container
 
 ```
     docker pull postgres:14.11
     docker run --name local-pg -e POSTGRES_PASSWORD=pwd -e POSTGRES_USER=postgres -p 5432:5432 -d postgres   
 ```
-4. 
-5. From the terminal navigate to ETL_Python folder and run module.
+
+4. From the terminal navigate to ETL_Python folder to run module.
 
 ````
-python main.py -e <file_type> -e <file_name>
+python3 main.py -e <file_type> -e <file_name>
 Both file_type, file_name are optional environment variables
 ````
 
@@ -38,7 +39,6 @@ Run default with csv file on /data folder or alternatively specify json file on 
 ````
 python3 main.py
 (or)
-
 python3 main.py -e file_type=json -e file_name=movies.json
 ````
 
@@ -49,7 +49,7 @@ sample log file : Etl-run.log
 Database connection class:
 Connects to database from pool of connections with values provided from db_config.json file
 
-=================================================================================================
+===========================================================================================
 
 ## Unit tests:
 /tests directory has required unit tests for transformation, loading, and extraction

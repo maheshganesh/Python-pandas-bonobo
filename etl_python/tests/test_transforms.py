@@ -1,3 +1,6 @@
+"""
+Test transforms functions
+"""
 import unittest
 import pandas as pd
 from pandas.testing import assert_frame_equal
@@ -59,7 +62,6 @@ class TestMovieTransform(unittest.TestCase):
 class TestTransformCredit(unittest.TestCase):
 
     def setUp(self):
-        # Sample data for testing
         self.df = pd.DataFrame({
             'id': [1, 2, 2, 3],
             'crew': [

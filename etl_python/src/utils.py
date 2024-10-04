@@ -28,7 +28,7 @@ logger = logging.getLogger('etl_python')
 
 def extract_file(filepath: str, file_format='csv') -> DataFrame:
     """
-       Extract data function
+       Extract data from file
        :output: dataframe, extracted from CSV data
     """
     try:

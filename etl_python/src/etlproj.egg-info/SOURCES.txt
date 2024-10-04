@@ -1,0 +1,6 @@
+setup.py
+src/etlproj.egg-info/PKG-INFO
+src/etlproj.egg-info/SOURCES.txt
+src/etlproj.egg-info/dependency_links.txt
+src/etlproj.egg-info/top_level.txt
+tests/test_analysis.py

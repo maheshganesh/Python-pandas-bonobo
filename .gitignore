@@ -5,4 +5,5 @@
 .idea/inspectionProfiles/profiles_settings.xml
 *.pyc
 etl_python/tests/.DS_Store
-*.txt
+
+etl_python/src/etlproj.egg-info/dependency_links.txt
